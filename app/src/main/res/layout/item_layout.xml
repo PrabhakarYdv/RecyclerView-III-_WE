@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="15dp">
+
+        <ImageView
+            android:id="@+id/edit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/edit_icon" />
+
+        <TextView
+            android:id="@+id/name_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_btn"
+            android:padding="4dp"
+            android:text="Employee Name :"
+            android:textColor="#1C0101"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/name_option"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/name_option"
+            android:padding="4dp"
+            android:text=""
+            android:textColor="#1C0101"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/salary_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:padding="4dp"
+            android:text="Salary :"
+            android:textColor="#1C0101"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/salary_option"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/salary_option"
+            android:padding="4dp"
+            android:textColor="#1C0101"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/age_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/salary"
+            android:padding="4dp"
+            android:text="Age :"
+            android:textColor="#1C0101"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@id/age_option"
+            android:layout_alignTop="@id/age_option"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/age_option"
+            android:padding="4dp"
+            android:textColor="#1C0101"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
